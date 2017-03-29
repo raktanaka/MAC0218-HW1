@@ -1,4 +1,8 @@
-# When done, submit this entire file to the autograder.
+# MAC0218 HW1
+#
+# Ricardo Akira Tanaka 9778856
+# Rubens Douglas Roccia 9
+
 
 # Part 1
 
