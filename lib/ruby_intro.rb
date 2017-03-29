@@ -4,18 +4,18 @@
 # Rubens Douglas Roccia 9
 
 
-# Part 1
+# Part 1:
 
 def sum arr
-  # YOUR CODE HERE
+
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+
 end
 
 # Part 2
@@ -35,5 +35,35 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+  def isbn=(isbn)
+    if isbn == nil or isbn.size == 0
+      raise ArgumentError.new('Erro no ISBN')
+    end
+    @isbn = isbn
+  end
+
+  def price=(price)
+    if price <= 0
+      raise ArgumentError.new('Erro no preco')
+    end
+    @price = price
+  end
+
+  def isbn
+    "#{@isbn}"
+  end
+
+  def price
+    "#{@price}"
+  end
+
+  def initialize(isbn, price)
+    self.isbn = isbn
+    self.price = price
+  end
+
+  def price_as_string
+    "$#{@price.round(2)}"
+    sprintf("$s%#.2f", @price)
+  end
 end
